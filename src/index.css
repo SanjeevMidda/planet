@@ -1,0 +1,45 @@
+* {
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  transition: all 1s;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  gap: 10px;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: movement 7s linear infinite;
+}
+
+h1 {
+  animation: textMovement 7s linear infinite;
+}
+
+@keyframes movement {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes textMovement {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.textContainer {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid black;
+  animation: textMovement 7s linear infinite;
+}
